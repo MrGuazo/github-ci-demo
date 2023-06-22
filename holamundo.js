@@ -11,4 +11,3 @@ holamundo.get('/multiplicar', (req,multi)=>{
     multi.send("la multiplicación es: " + (num1*num2));
 });
 
-module.exports = holamundo;
