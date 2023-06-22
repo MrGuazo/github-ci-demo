@@ -7,10 +7,11 @@ describe('GET /', () => {
             .expect('Hola Mundo!', done);
     });
 });
-describe('GET /multiplicacion?num1=5&num2=5', () => {
-    it('responde con la multiplicacion es: 25', done => {
+
+describe('GET /multiplicación?num1=8&num2=9', () => {
+    it('responde con la multiplicación es: -1', done => {
         request(app)
-            .get('/multiplicacion?num1=5&num2=5')
-            .expect('la multiplicacion es: 25', done);
+            .get('/multiplicación?num1=8&num2=9')
+            .expect('la multiplicación es: -1', done);
     });
 });
