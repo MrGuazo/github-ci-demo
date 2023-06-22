@@ -9,9 +9,9 @@ describe('GET /', () => {
 });
 
 describe('GET /multiplicación?num1=8&num2=9', () => {
-    it('responde con la multiplicación es: -1', done => {
+    it('responde con la multiplicación es: 9', done => {
         request(app)
             .get('/multiplicación?num1=8&num2=9')
-            .expect('la multiplicación es: -1', done);
+            .expect('la multiplicación es: 9', done);
     });
 });
