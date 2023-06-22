@@ -6,7 +6,7 @@ describe('GET /', () => {
             .get('/')
             .expect('Hola Mundo!', done);
     });
-});
+}); 
 
 describe('GET /multiplicación?num1=8&num2=9', () => {
     it('responde con la multiplicación es: 9', done => {
