@@ -5,7 +5,7 @@ res.send('Hola Mundo!'));
 
 
 // Function to handle the root path
-holamundo.get('/resta', (req, res) => {
+holamundo.get('/multiplicacion', (req, res) => {
 
     // Access the provided 'page' and 'limt' query parameters
     let num1 = parseInt(req.query.num1); 
@@ -13,7 +13,7 @@ holamundo.get('/resta', (req, res) => {
         
 
     // Return the articles to the rendering engine
-    res.send("la resta es: "+ (num1 - num2 ));
+    res.send("la multiplicacion es: "+ (num1 * num2 ));
 
 });
 
