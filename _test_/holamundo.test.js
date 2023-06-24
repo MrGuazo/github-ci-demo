@@ -8,10 +8,10 @@ describe('GET /', () => {
     });
 });
 
-describe('GET /resta?num1=8&num2=9', () => {
-    it('responde con la resta es: -1', done => {
+describe('GET /multi?num1=8&num2=5', () => {
+    it('responde con la resta es: 40', done => {
         request(app)
-            .get('/resta?num1=8&num2=9')
-            .expect('la resta es: -1', done);
+            .get('/multi?num1=8&num2=5')
+            .expect('la resta es: 40', done);
     });
 });
