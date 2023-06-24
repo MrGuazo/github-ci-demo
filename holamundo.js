@@ -13,7 +13,7 @@ holamundo.get('/multi', (req, res) => {
         
 
     // Return the articles to the rendering engine
-    res.send("la resta es: "+ (num1 * num2 ));
+    res.send("la multiplicación es: "+ (num1 * num2 ));
 
 });
 
