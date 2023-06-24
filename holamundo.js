@@ -17,3 +17,4 @@ holamundo.get('/multi', (req, res) => {
 
 });
 
+module.exports = holamundo;
