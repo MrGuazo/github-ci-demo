@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app');
+const app = require('../holamundo');
 describe('GET /', () => {
     it('responde con Hola Mundo!', done => {
         request(app)
@@ -8,10 +8,10 @@ describe('GET /', () => {
     });
 });
 
-describe('GET /division?num1=10&num2=5', () => {
-    it('responde con la división es: 2', done => {
+describe('GET /division?num1=8&num2=8', () => {
+    it('responde con la división es: 1', done => {
         request(app)
-            .get('/division?num1=10&num2=5')
-            .expect('la división es: 2', done);
+            .get('/division?num1=8&num2=8')
+            .expect('la división es: 1', done);
     });
 });
