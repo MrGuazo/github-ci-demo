@@ -5,7 +5,7 @@ res.send('Hola Mundo!'));
 
 
 // Function to handle the root path
-holamundo.get('/resta', (req, res) => {
+holamundo.get('/multiplicacion', (req, res) => {
 
     // Access the provided 'page' and 'limt' query parameters
     let num1 = parseInt(req.query.num1); 
