@@ -8,10 +8,10 @@ describe('GET /', () => {
     });
 });
 
-describe('GET /resta?num1=8&num2=5', () => {
+describe('GET /multiplicacion?num1=8&num2=5', () => {
     it('responde con la multiplicación es: 40', done => {
         request(app)
-            .get('/resta?num1=8&num2=5')
+            .get('/multiplicacion?num1=8&num2=5')
             .expect('la multiplicación es: 40', done);
     });
 });
